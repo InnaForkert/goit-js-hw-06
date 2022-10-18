@@ -14,7 +14,7 @@ const images = [
 ];
 const gallery = images.map(img => `<li><img src="${img.url}" alt="${img.alt}" width="200"></li>`).join();
 const galleryUl = document.querySelector(".gallery");
-galleryUl.innerHTML = gallery;
+galleryUl.insertAdjacentHTML("afterbegin", gallery);
 galleryUl.style.display = "flex";
 galleryUl.style.listStyle = "none";
 galleryUl.style.alignItems = "center";
