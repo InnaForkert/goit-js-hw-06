@@ -10,13 +10,6 @@ const ingredients = [
 const ul = document.querySelector("#ingredients");
 let list = document.createDocumentFragment();
 
-// ingredients.forEach((ingredient) => {
-//   const li = document.createElement("li");
-//   li.textContent = ingredient;
-//   li.classList.add("item");
-//   list.appendChild(li);
-// });
-// ul.appendChild(list);
 const items = ingredients.map(ingredient => {
     const li = document.createElement("li");
   li.textContent = ingredient;
@@ -24,3 +17,12 @@ const items = ingredients.map(ingredient => {
   return li;
 })
 ul.append(...items)
+
+
+// ingredients.forEach((ingredient) => {
+//   const li = document.createElement("li");
+//   li.textContent = ingredient;
+//   li.classList.add("item");
+//   list.appendChild(li);
+// });
+// ul.appendChild(list);
